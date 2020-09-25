@@ -2,4 +2,11 @@
 
 echo "WELCOME in FlipCoinSimulator"
 
+choice=$((RANDOM%2))
 
+if [ $choice -eq 1 ]
+then
+	echo "Tail"
+else
+	echo "Head"
+fi
