@@ -21,8 +21,9 @@ fi
 
 head=0
 tail=0
-choice=20
+choice=50
 
+#take choice to check how much time won
 for((i=1;i<=$choice;i++))
 do
 if [ $res == $flip ]
@@ -37,3 +38,10 @@ done
 
 echo "Total head:" $head
 echo "Total tail:" $tail
+
+if [ $head -gt $tail ]
+then
+	echo "Head is win:" $head
+else
+	echo "Tail is win:"$tail
+fi
