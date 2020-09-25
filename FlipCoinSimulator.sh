@@ -2,7 +2,7 @@
 
 echo "WELCOME in FlipCoinSimulator"
 
-choice=$((RANDOM%2))
+#Flip a coin and check its Head or tail
 
 if [ $choice -eq 1 ]
 then
@@ -10,3 +10,5 @@ then
 else
 	echo "Head"
 fi
+
+
